@@ -2,7 +2,9 @@
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
+        <Questionnaire students="45"/>
         <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
+        
         <blockquote>
           &#8220;First, solve the problem. Then, write the code.&#8221;
           <footer>
@@ -17,8 +19,10 @@
 </template>
 
 <script>
+import Questionnaire from './Questionnaire'
 export default {
   name: 'HelloWorld',
+  components: {Questionnaire},
   props: {
     msg: String
   }
